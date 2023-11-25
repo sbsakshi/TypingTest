@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Typing Speed Test Results</title>
+</head>
+<body>
+    <h1>Typing Speed Test Results</h1>
+    
+    <p>Your typing speed: {{ speed }} w/sec</p>
+    <p>Total errors: {{ error }}</p>
+    
+    <a href="/">Try Again</a> 
+</body>
+<style>
+    body {
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        background: linear-gradient(120deg, #fc00ff, #00dbde);
+        background-attachment: fixed;
+        text-align: center;
+        padding-top: 50px;
+        color: #fff;
+    }
+
+    h1, p, a {
+        color: #fff;
+        font-weight: bold;
+    }
+
+    a {
+        text-decoration: none;
+        padding: 10px 20px;
+        background-image: linear-gradient(to right, #ff0844, #ffb199);
+        border-radius: 25px;
+        transition: all 0.3s ease;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    a:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    }
+</style>
+</style>
+</html>

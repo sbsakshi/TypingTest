@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Typing Speed Test</title>
+</head>
+<body>
+    <h1>Typing Speed Test</h1>
+    <p>Type the following text:</p>
+    <p>{{ final_choice }}</p> 
+    <form action="/results" method="post">
+        <input type="hidden" name="final_choice" value="{{ final_choice }}">
+        <input type="hidden" name="start_time" value="{{ start_time }}">
+        <textarea name="user_input" rows="4" cols="50" placeholder="Type here..."></textarea>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <!-- You can add more content or styling as needed -->
+</body>
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #1c1c1c;
+        color: #fff;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 1.2em;
+        margin-bottom: 15px;
+    }
+
+    form {
+        margin-top: 20px;
+    }
+    textarea {
+            width: 80%;
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: 2px solid #fff;
+            background-color: #2b2b2b;
+            color: #fff;
+            resize: none;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-image: linear-gradient(to right, #ff0844, #ffb199);
+            border-radius: 5px;
+            border: none;
+            color: #fff;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+
+</html>
